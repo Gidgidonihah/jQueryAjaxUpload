@@ -17,7 +17,7 @@
 			element,
 			iframe;
 
-		options = $.extend({}, $.fn.iframePostForm.defaults, options);
+		options = $.extend({}, $.fn.ajaxUpload.defaults, options);
 
 		// Add the iframe.
 		if (!$('#' + options.iframeID).length) {
@@ -81,7 +81,7 @@
 		});
 	};
 
-	$.fn.iframePostForm.defaults = {
+	$.fn.ajaxUpload.defaults = {
 		global		: true,						// Trigger global ajax events
 		url			: false,					// Replaces the form url
 		iframeID	: 'iframe-post-form',		// Iframe ID

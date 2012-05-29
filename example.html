@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<title>jQuery Ajax Upload Example</title>
+	</head>
+	<body>
+		<h1>Example Page</h1>
+		<form method="post" enctype="multipart/form-data" id="example_form" class="container tableless_form">
+			<label for="file">Upload File:</label>
+			<input type="file" name="file[]" id="file" class="image_file"><br>
+			<input type="submit" value="Submit">
+		</form>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="jQueryAjaxUpload.js"></script>
+		<script>
+			$('#example_form').ajaxUpload({
+				complete: function(){
+					alert('Upload complete');
+				}
+			});
+		</script>
+	</body>
+</html>

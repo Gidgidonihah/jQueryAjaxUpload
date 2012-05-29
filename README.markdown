@@ -16,8 +16,6 @@ The plugin can now be passed a url to which the form can post. This is useful wh
 I figured since I'm in there, I might as well reformat the code to match my liking. And fix some spelling errors.
 
 ## Usage
-In some cases we wanted to display the notification without allowing the user to close the window (primarily because we don’t want to allow a notice to be ignored as described above) so added an option to hide the close button as shown in this example:
-
 	$('#form_id').ajaxUpload({
 		global		: true,						// Trigger global ajax events
 		url			: false,					// Replaces the form url
